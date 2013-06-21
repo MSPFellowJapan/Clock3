@@ -1,0 +1,51 @@
+﻿html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -ms-flex-align: center;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    display: -ms-flexbox;
+}
+
+.fixedlayout {
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr;
+    display: -ms-grid;
+    height: 768px;
+    width: 1024px;
+    display: -ms-flexbox;
+    -ms-flex-align:center;
+    -ms-flex-pack:center;
+    font-size: 200px;
+}
+
+.clock {
+    -ms-transform-origin-y:50%;
+    transition:transform linear 0.5s;
+}
+    .clock.reverse {
+        transform:rotateY(180deg)
+    }
+
+@keyframes spin {
+    from {
+        
+    }
+
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>Clock3</title>
+
+    <!-- WinJS 参照 -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+    
+    <!-- 追加コード -->
+    <script src="/Scripts/skeleton.js"></script>
+    <!-- 追加コード -->
+
+    <!-- Clock3 参照 -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <!--追加コード-->
+    <div id="clockTemplate" data-win-control="WinJS.Binding.Template">
+        <p class="clock">
+            <span data-win-bind="innerText: hours"></span>:
+            <span data-win-bind="innerText: minutes"></span>:
+            <span data-win-bind="innerText: seconds"></span>
+        </p>
+    </div>
+    <!--追加コード-->
+    <div data-win-control="WinJS.UI.ViewBox">
+        <div id="container" class="fixedlayout">
+        </div>
+    </div>
+</body>
+</html>
