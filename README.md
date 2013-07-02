@@ -119,6 +119,8 @@ body {
                 // TODO: このアプリケーションは中断状態から再度アクティブ化されました。
                 // ここでアプリケーションの状態を復元します。
             }
+            //args.setPromise(WinJS.UI.processAll());
+            /*---- 追加コード ----*/
             args.setPromise(WinJS.UI.processAll().done(function () {
                 var Clock = Skeleton.Model.extend({
                     hours: "",
@@ -153,6 +155,7 @@ body {
                 view.renderTo(container);
                 clock.start();
             }));
+            /*---- 追加コード ----*/
         }
     };
 
@@ -191,6 +194,7 @@ body {
                 // TODO: このアプリケーションは中断状態から再度アクティブ化されました。
                 // ここでアプリケーションの状態を復元します。
             }
+            //args.setPromise(WinJS.UI.processAll());
             args.setPromise(WinJS.UI.processAll().done(function () {
                 var Clock = Skeleton.Model.extend({
                     hours: "",
@@ -371,7 +375,7 @@ var ClockView = Skeleton.View.extend({
 }
 ```
 
-このようにCSSを使用すると簡単アニメーションを少ないコードで設定できます．
+このようにCSSを使用すると簡単なアニメーションを少ないコードで設定できます．
 今回はステップ1,2と違いクリックイベントでのアクションを加えました．ステップ1,2それぞれ
 の実装方法ではどのようになるか試してみてください．
 
